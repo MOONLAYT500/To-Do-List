@@ -1,9 +1,11 @@
 body {
+
   margin: 0 auto;
+  background-color: rgb(24, 27, 39);
 }
 
 .container {
-  background-color: aquamarine;
+  background-color: rgba(100, 139, 126, 0.356);
   width: 600px;
   margin: 0 auto;
   padding: 10px;
