@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>To-Do List</h1>
+      </header>
+      <section class="input-block">
+        <input class="inpur-bar" type="text" placeholder="I want to do..." />
+        <button class="add-task">ADD</button>
+      </section>
+      <section class="sort">
+        <div class="sort-menu-buttons">
+          <button class="sort-button">All</button>
+          <button class="sort-button">Done</button>
+          <button class="sort-button">Undone</button>
+        </div>
+        <div class="sort-by-date">
+          <div class="sort-data-text">Sort by Date</div>
+          <button class="sort-date-button">
+            <img class="arrow-up" src="./img/arrowUp.svg" alt="OLD" />
+          </button>
+          <button class="sort-date-button">
+            <img class="arrow-up" src="./img/arrowUp.svg" alt="OLD" />
+          </button>
+        </div>
+      </section>
+      <section class="tasks">
+        <div class="wrapper">
+          <div class="task">
+            <input
+              class="task-check"
+              type="checkbox"
+              name="task-check"
+              id="task-check1"
+            />
+            <label for="task-check1"></label>
+            <span class="task-text">do smth</span>
+            <span class="task-date">11.01.2022</span>
+            <button class="delete-task"><img class="delete-icon" src="./img/delete.png" alt="Delete"></button>
+          </div>
+          <div class="task">
+            <input
+              class="task-check"
+              type="checkbox"
+              name="task-check"
+              id="task-check2"
+            />
+            <label for="task-check2"></label>
+            <span class="task-text">do smth</span>
+            <span class="task-date">11.01.2022</span>
+            <button class="delete-task"><img class="delete-icon" src="./img/delete.png" alt="Delete"></button>
+          </div>
+          <div class="task">
+            <input
+              class="task-check"
+              type="checkbox"
+              name="task-check"
+              id="task-check3"
+            />
+            <label for="task-check3"></label>
+            <span class="task-text">do smth</span>
+            <span class="task-date">11.01.2022</span>
+            <button class="delete-task"><img class="delete-icon" src="./img/delete.png" alt="Delete"></button>
+          </div>
+          <div class="task">
+            <input
+              class="task-check"
+              type="checkbox"
+              name="task-check"
+              id="task-check4"
+            />
+            <label for="task-check4"></label>
+            <span class="task-text">do smth</span>
+            <span class="task-date">11.01.2022</span>
+            <button class="delete-task"><img class="delete-icon" src="./img/delete.png" alt="Delete"></button>
+          </div>
+        </div>
+      </section>
+      <section class="pages">
+        <button class="previous-page">prev</button>
+        <button class="page-number">1</button>
+        <button class="page-number">2</button>
+        <button class="page-number">3</button>
+        <button class="page-number">4</button>
+        <button class="page-number">5</button>
+        <button class="next-page">next</button>
+      </section>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

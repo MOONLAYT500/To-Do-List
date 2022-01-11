@@ -1,0 +1,170 @@
+body {
+
+  margin: 0 auto;
+}
+
+.container {
+  background-color: aquamarine;
+  width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* header */
+
+.header{
+  text-align: center;
+}
+
+/* input-block */
+
+.input-block {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 20px 0;
+}
+
+.inpur-bar{
+  width: 52%;
+  border-radius: 5px 0 0 5px;
+  border: none;
+}
+
+.add-task{
+  background-color: white;
+  border:none;
+  border-radius: 0 5px 5px 0;
+}
+
+/* sort-block */
+
+.sort {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.sort-button {
+  border-radius: 15px;
+  border:none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.sort-button:first-of-type {
+  padding: 5px 23px 5px 23px;
+}
+
+.sort-button:nth-of-type(2){
+  color: green;
+  padding: 5px 13px 5px 13px;
+}
+
+.sort-button:last-of-type {
+  color: red;
+}
+
+.sort-by-date {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.sort-date-button {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  padding-top: 5px;
+}
+
+.sort-data-text{
+  padding-right: 10px;
+}
+
+.sort-date-button:last-of-type{
+  transform:rotate(180deg);
+}
+
+.arrow-up{
+  width: 15px;
+}
+
+/* tasks-block */
+
+.tasks{
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 350px;
+}
+
+.task{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.task-check {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.task-check+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+}
+.task-check+label::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.task-check:checked+label::before {
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.task-date{
+  margin-left: 50px;
+}
+
+.delete-task{
+  border:none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.delete-icon{
+  width: 20px;
+
+
+}
+
+/* pages */
+.pages{
+  text-align: center;
+}
+
+.pages>button {
+  cursor: pointer;
+}
