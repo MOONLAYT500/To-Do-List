@@ -75,19 +75,6 @@ button{
   transition: transform .2s;
 }
 
-.sort-button:first-of-type {
-  padding: 5px 23px 5px 23px;
-}
-
-.sort-button:nth-of-type(2){
-  color: green;
-  padding: 5px 13px 5px 13px;
-}
-
-.sort-button:last-of-type {
-  color: red;
-}
-
 .sort-button:hover{
   transform: scale(1.25);
 }
