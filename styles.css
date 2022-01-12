@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
 
+
 body {
   min-height: 100vh;
-  margin: 0 auto;
   background: rgb(71,249,245);
   background: linear-gradient(170deg, rgba(71,249,245,1) 27%, rgba(213,89,213,1) 72%);
+  background-repeat: no-repeat;
   font-family: 'Be Vietnam Pro', sans-serif;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 button{
@@ -15,23 +18,18 @@ button{
 /* header */
 
 .header{
-  text-align: center;
   padding-top: 50px;
   color: rgba(0, 0, 0, 0.904);
+  text-align: center;
 }
 
 .container {
   background-color: rgba(255, 255, 255, 0.904);
-  width: 600px;
+  max-width: 600px;
   margin: 50px auto;
   padding: 10px;
   border-radius: 10px;
   text-align: center;
-}
-
-.main-wrapper{
-  width: 450px;
-  margin: 0 auto;
 }
 
 /* input-block */
@@ -55,6 +53,10 @@ button{
   cursor: pointer;
 }
 
+.add-task:hover{
+  color: rgb(0, 204, 255);
+}
+
 /* sort-block */
 
 .sort {
@@ -62,6 +64,14 @@ button{
   justify-content: space-between;
   align-items: center;
 }
+
+@media (max-width:500px) {
+  .sort-menu-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .sort-button {
   background: transparent;
   border:none;
