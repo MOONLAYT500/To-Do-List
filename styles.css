@@ -65,12 +65,7 @@ button{
   align-items: center;
 }
 
-@media (max-width:500px) {
-  .sort-menu-buttons {
-    display: flex;
-    flex-direction: column;
-  }
-}
+
 
 .sort-button {
   background: transparent;
@@ -102,7 +97,6 @@ button{
 }
 
 .sort-by-date {
-  margin-left: 50px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -233,4 +227,15 @@ button{
 
 .page-button-active {
   background-color: blanchedalmond;
+}
+
+@media (max-width:500px) {
+  .sort-menu-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .sort-by-date {
+    flex-direction: column;
+  }
+
 }
