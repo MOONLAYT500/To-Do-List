@@ -1,23 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
 
-
 body {
   min-height: 100vh;
-  background: rgb(71,249,245);
-  background: linear-gradient(170deg, rgba(71,249,245,1) 27%, rgba(213,89,213,1) 72%);
+  background: rgb(71, 249, 245);
+  background: linear-gradient(
+    170deg,
+    rgba(71, 249, 245, 1) 27%,
+    rgba(213, 89, 213, 1) 72%
+  );
   background-repeat: no-repeat;
   font-family: 'Be Vietnam Pro', sans-serif;
   padding: 0 20px;
   box-sizing: border-box;
 }
 
-button{
+button {
   padding: 0;
 }
 
 /* header */
 
-.header{
+.header {
   padding-top: 50px;
   color: rgba(0, 0, 0, 0.904);
   text-align: center;
@@ -40,20 +43,20 @@ button{
   padding: 20px 0 20px 0;
 }
 
-.inpur-bar{
+.inpur-bar {
   width: 100%;
   border-radius: 5px 0 0 5px;
   border: none;
 }
 
-.add-task{
+.add-task {
   background-color: white;
-  border:none;
+  border: none;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
 }
 
-.add-task:hover{
+.add-task:hover {
   color: rgb(0, 204, 255);
 }
 
@@ -65,17 +68,15 @@ button{
   align-items: center;
 }
 
-
-
 .sort-button {
   background: transparent;
-  border:none;
+  border: none;
   padding: 5px;
   cursor: pointer;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
-.sort-button:hover{
+.sort-button:hover {
   transform: scale(1.25);
 }
 
@@ -89,7 +90,7 @@ button{
   align-items: center;
 }
 
-.sort-data-text{
+.sort-data-text {
   padding-right: 10px;
 }
 
@@ -99,19 +100,19 @@ button{
   background: transparent;
   cursor: pointer;
   padding-top: 5px;
-  transition: transform .5s;
+  transition: transform 0.5s;
 }
 
-.sort-date-button:last-of-type{
-  transform:rotate(180deg);
+.sort-date-button:last-of-type {
+  transform: rotate(180deg);
 }
 
-.sort-date-button-active{
+.sort-date-button-active {
   border: 1px solid red;
   border-radius: 50%;
 }
 
-.arrow-up{
+.arrow-up {
   width: 15px;
 }
 
@@ -121,17 +122,11 @@ button{
 
 /* tasks-block */
 
-.tasks{
-  text-align: center;
+.tasks {
   padding: 10px 0 10px 0;
 }
 
-.wrapper{
-  display: flex;
-  flex-direction: column;
-}
-
-.task{
+.task {
   display: flex;
   align-items: center;
   padding-top: 5px;
@@ -144,13 +139,13 @@ button{
   opacity: 0;
 }
 
-.task-check+label {
+.task-check + label {
   display: inline-flex;
   align-items: center;
   user-select: none;
   cursor: pointer;
 }
-.task-check+label::before {
+.task-check + label::before {
   content: '';
   display: inline-block;
   width: 1em;
@@ -163,34 +158,34 @@ button{
   background-size: 50% 50%;
 }
 
-.task-check:checked+label::before {
+.task-check:checked + label::before {
   background-color: #1b9e26;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
 }
 
-.task-text{
-  width:80%;
+.task-text {
+  width: 80%;
   text-align: left;
 }
 
-.delete-task{
+.delete-task {
   padding-left: 10px;
-  border:none;
+  border: none;
   background: transparent;
   cursor: pointer;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
-.delete-task:hover{
+.delete-task:hover {
   transform: scale(1.1);
 }
 
-.delete-icon{
+.delete-icon {
   width: 20px;
 }
 
 /* pages */
-.pages{
+.pages {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -198,17 +193,17 @@ button{
 
 .page-button {
   cursor: pointer;
-  background-color:rgba(221, 235, 227, 0.26);
-  border:1px solid rgb(177, 171, 171);
+  background-color: rgba(221, 235, 227, 0.26);
+  border: 1px solid rgb(177, 171, 171);
   padding: 5px 10px;
   margin-right: 1px;
 }
 
-.page-button:first-of-type{
+.page-button:first-of-type {
   border-radius: 10% 0 0 10%;
 }
 
-.page-button:last-of-type{
+.page-button:last-of-type {
   border-radius: 0 10% 10% 0;
 }
 
@@ -216,7 +211,7 @@ button{
   background-color: blanchedalmond;
 }
 
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .sort-menu-buttons {
     display: flex;
     flex-direction: column;
@@ -224,5 +219,4 @@ button{
   .sort-by-date {
     flex-direction: column;
   }
-
 }
